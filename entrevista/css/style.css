@@ -1,0 +1,25 @@
+body {
+    font-family: 'Roboto', sans-serif !important;
+    margin: 0;
+}
+
+header{
+    color: #fff !important;
+    background-color: #006b85 !important;
+    background: #00003E;
+    background: -webkit-linear-gradient(to right, #31BDE6, #00003E); 
+    background: linear-gradient(to right, #31BDE6, #00003E);
+    border: 1px solid transparent;
+}
+
+footer{
+    color: #000 !important;
+    background: #00003E;
+    background: -webkit-linear-gradient(to right, #31BDE6, #00003E); 
+    background: linear-gradient(to right, #31BDE6, #00003E);    
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
