@@ -107,6 +107,8 @@ class UsuarioDAO {
             . " ds_email = '".$usuario->getDsEmail()."' ,"
             . " ds_login = '".$usuario->getDsLogin()."' ,"
             . " pw_senha = '".$usuario->getPwSenha()."' ,"
+            . " id_perfil = '".$usuario->getIdPerfil()."' ,"
+            . " ao_status = '".$usuario->getAoStatus()."' ,"
             . " dt_alteracao = '".$usuario->getDtAlteracao(). "'"
             . " WHERE id_usuario = ".$usuario->getIdUsuario();
 

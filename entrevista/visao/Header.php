@@ -19,17 +19,6 @@ include_once DIR_UTIL . 'Define.php';
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <a class="navbar-brand"  href="GuiCadastroUsuario.php">Cadastro</a>
                 <a class="navbar-brand"  href="GuiUsuarios.php">Usuario</a>
-
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="../../phpmyadmin/index.php"> phpmyadmin</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../index.php"> Home </a>
-                        </li>
-                    </ul>
-                </div>
             </nav>
         </header>
         <div class="container-fluid">

@@ -28,6 +28,24 @@
 
 	}
      
+     function perfil($id_perfil){
+
+
+        if($id_perfil == 1){
+         $id_perfil = 'Administrador';
+            return $id_perfil;
+         }
+
+         if($id_perfil == 2){
+         $id_perfil = 'Atendente';
+            return $id_perfil;
+         }
+
+         if($id_perfil == 3){
+         $id_perfil = 'Desenvolvedor';
+            return $id_perfil;
+         }
+    }
                 
     if (isset($_REQUEST['editar'])){
             $id_usuario = $_REQUEST['id_usuario'];
@@ -51,3 +69,4 @@
             $action = "op=salvar";
 
     }
+

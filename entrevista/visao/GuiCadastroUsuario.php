@@ -25,7 +25,7 @@ include_once DIR_UTIL . 'funcoes.php';
             </div>
             <div class="form-group col-md-5">
                 <label >CPF</label>
-                <input class="form-control form-control-sm" type="text" name="nr_cpf" id="nr_cpf" value="<?= $nr_cpf ?>" required>
+                <input class="form-control form-control-sm" pattern="^((\d{3})(\d{3})(\d{3})(\d{2}))*$" type="text" name="nr_cpf" id="nr_cpf" value="<?= $nr_cpf ?>" required>
             </div>
         </div>    
         <div class="form-row">
@@ -52,14 +52,13 @@ include_once DIR_UTIL . 'funcoes.php';
                 </select>
             </div>
         </div>    
-        <div class="form-group form-check" required>
+        <div class="form-group form-check">
             <label>Ativo ?</label>
             <input type="checkbox" name="ao_status" id="ao_status" value="1">
         </div>
-    
         <div class="botoes">
             <button type="submit" class="btn btn-secondary">Salvar</button>
-            <button href="GuiUsuarios.php" type="button" class="btn btn-secondary">Voltar</button>
+            <a href="GuiUsuarios.php"><button type="button" class="btn btn-secondary">Voltar</button></a>
         </div>
     </form>
 </div>

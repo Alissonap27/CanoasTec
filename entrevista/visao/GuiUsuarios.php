@@ -16,16 +16,17 @@ $dao = new UsuarioDAO();
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button><br><br><br>
         </form>
 
-        <table>
+        <table class="table">
             <thead>
                 <tr>
-                    <th width="35%">Nome</th>
-                    <th width="10%">CPF</th>
-                    <th width="35%">Email</th>
-                    <th width="8%">Status</th>
-                    <th width="40%">Data de Cadastro</th>
-                    <th width="40%">Editar</th>
-                    <th width="40%">Excluir</th>
+                    <th scope="col" width="25%">Nome</th>
+                    <th scope="col" width="15%">CPF</th>
+                    <th scope="col" width="20%">Email</th>
+                    <th scope="col" width="15%">Perfil</th>
+                    <th scope="col" width="10%">Status</th>
+                    <th scope="col" width="35%">Data de Cadastro</th>
+                    <th scope="col" width="35%">Editar</th>
+                    <th scope="col" width="35%">Excluir</th>
                 </tr>
             </thead>
 
@@ -45,10 +46,12 @@ $dao = new UsuarioDAO();
                 }else{
                     foreach ($dao->listar($pesquisar) as $usuario) {                        
                 ?>
+                        
                         <tr>
                             <td><?=$usuario->getNmUsuario()?></td>
                             <td><?=mask($usuario->getNrCpf(),'###.###.###-##'); ?></td>
                             <td><?=$usuario->getDsEmail()?></td>
+                            <td><?=perfil($usuario->getIdPerfil())?></td>
                             <td><?=$usuario->getAoStatus() ? "Ativo" : "Inativo" ?></td>
                             <td><?=date('d/m/Y ', strtotime($usuario->getDtCadastro()));?></td>
                             <td><a class="btn btn-secondary" href="../visao/GuiCadastroUsuario.php?editar&id_usuario=<?=$usuario->getIdUsuario();?> "> Editar</a>  </td>
