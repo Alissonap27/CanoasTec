@@ -55,7 +55,7 @@ include_once DIR_UTIL . 'funcoes.php';
             <button type="submit" class="btn btn-secondary">Salvar</button>
             <a href="GuiUsuarios.php"><button type="button" class="btn btn-secondary">Voltar</button></a>
         </div>
-    </form>
+    </form><br><br><br>
 </div>
 
 <?php
